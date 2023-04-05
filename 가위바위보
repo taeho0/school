@@ -1,0 +1,14 @@
+a=int(input())
+b=int(input())
+if a>b:
+  if a==3 and b==1:
+    print("b승")
+  else:
+    print("a승")
+elif b>a:
+  if a==1 and b==3:
+    print("a승")
+  else:
+    print("b승")
+else:
+  print("비김")
