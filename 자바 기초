@@ -1,0 +1,12 @@
+package taeho0815;
+
+public class taeho070815 {
+
+	public static void main(String[] args) {
+		System.out.println(3+5);
+		System.out.println("3+5");
+		System.out.println("3+5 =");
+		System.out.print(3+5);
+	}
+
+}
