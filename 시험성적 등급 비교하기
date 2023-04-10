@@ -1,0 +1,11 @@
+A=int(input("시험 성적을 입력하세요"))
+if A>=90:
+	print("A")
+elif A>=80:
+  print("B")
+elif A>=70:
+  print("C")
+elif A>=60:
+  print("D")
+elif A<=59:
+  print("F")
