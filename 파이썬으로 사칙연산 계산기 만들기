@@ -1,0 +1,17 @@
+num = int(input("연산할 숫자를 입력해주세요:"))
+san = input("+-*/를 입력해주세요:")
+num1 = int(input("연산할 숫자를 입력해주세요:"))
+if san == "+":
+  print("출력예시")
+  print(num,"+",num1,"=",num+num1)
+elif san == "-":
+  print("출력예시")
+  print(num,"-",num1,"=",num-num1)
+elif san == "*":
+  print("출력예시")
+  print(num,"*",num1,"=",num*num1)
+elif san == "/":
+  print("출력예시")
+  print(num,"/",num1,"=",num/num1)
+else:
+  print("다시 입력해주세요")
