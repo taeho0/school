@@ -1,0 +1,17 @@
+money = int(input())
+if money // 1000 != 0 :
+  num1 = money // 1000
+  print("천원지폐",num1,"장")
+  money = (num*1000)
+if money // 500 !=0 :
+  num2 = money // 500
+  print("500원 동전",num2,"개")
+if money // 100 !=0 :
+  num3 = money //  100
+  print("100원 동전",num3,"개")
+if money // 50 !=0 :
+  num4 = money // 500
+  print("50원 동전",num4,"개")
+if money // 10 :
+  num5 = money // 10
+  print("10원 동전",num5,"개")
