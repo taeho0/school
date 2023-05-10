@@ -2,7 +2,7 @@ money = int(input())
 if money // 1000 != 0 :
   num1 = money // 1000
   print("천원지폐",num1,"장")
-  money = money-(num*1000)
+  money = money-(num1*1000)
 if money // 500 !=0 :
   num2 = money // 500
   print("500원 동전",num2,"개")
@@ -12,7 +12,7 @@ if money // 100 !=0 :
   print("100원 동전",num3,"개")
   money = money-(num3*100)
 if money // 50 !=0 :
-  num4 = money // 500
+  num4 = money // 50
   print("50원 동전",num4,"개")
   money = money-(num4*50)
 if money // 10 :
