@@ -1,0 +1,15 @@
+import random
+rn = random.randrange(1,101,1)
+b=1
+while(True):
+  a = int(input())
+  if(a<rn):
+    print("up")
+    b = b + 1
+  elif(a>rn):
+    print("down")
+    b = b + 1
+  elif(a==rn):
+    print("정답입니다")
+    print(b,"번만에 마추셨네")
+    break
