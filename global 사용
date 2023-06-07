@@ -1,0 +1,7 @@
+a = 17
+def test() :
+    global a
+    a = 13
+    print(a)
+print(a)
+test()
