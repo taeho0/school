@@ -1,0 +1,3 @@
+dict = {"john":26,"Tom":29}
+dict['Jenny'] = 21
+print(dict.values())
