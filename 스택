@@ -1,0 +1,17 @@
+b_list = []
+for i in range(1,11):
+  b_list.append(i)
+print(b_list)
+for i in range(1,4):
+  print(b_list.pop())
+print(b_list)
+b_list.append("f")
+b_list.append("k")
+b_list.append("d")
+b_list.append("w")
+b_list.append("z")
+b_list.append("f")
+b_list.append("g")
+for i in range(1,6):
+  print(b_list.pop())
+print(b_list)
