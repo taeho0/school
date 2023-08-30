@@ -1,0 +1,15 @@
+import random
+
+red = '\033[31m \033[41m' + '■' + '\033[0m'
+blue = '\033[34m \033[44m' + '■' + '\033[0m'
+yellow = '\033[33m \033[43m' + '■' + '\033[0m'
+green = '\033[32m \033[42m' + '■' + '\033[0m'
+pink = '\033[35m \033[45m' + '■' + '\033[0m'
+null = '\033[30m \033[40m' + '■' + '\033[0m'
+
+a_list, b_list, c_list, d_list, e_list, f_list, g_list = [], [], [], [], [], [], [] #병
+
+str_list = [red, blue, yellow, green, pink] #색을 모아둔 리스트
+
+lis_list = [a_list, b_list, c_list, d_list, e_list, f_list, g_list] #병을 모아둔 리스트
+
