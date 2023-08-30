@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>두번쨰</title>
+    <link rel="stylesheet" href="a.css">
+</head>
+
+<body>
+    <h1>css 두번쨰 시간</h1>
+
+    <div>
+        <h2>ul-li태그</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>사진</h2>
+        <img src="mi.jpg" alt="미하일">
+    </div>
+
+    <div>
+        <h2>문단 테크</h2>
+        <h3> </h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Odio, corporis consequuntur
+            in deserunt veritatis quibusdam necessitatibus
+            reiciendis commodi recusandae esse ratione
+            magni tempore veniam architecto dolor dolores
+            magnam facilis tenetur.
+        </p>
+    </div>
+</body>
+
+</html>
