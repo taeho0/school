@@ -1,0 +1,43 @@
+import time
+
+print("퀴즈 게임 입니다")
+a = int(input("넌센스 퀴즈를 하실꺼면 (1) 속담 퀴즈는 (2) 신조어 퀴즈는(3)"))
+
+
+def count_down(taeho):
+    for i in range(taeho, 0, -1):
+        print(f"남은 시간: {i} 초 남았습니다")
+        time.sleep(1)  # 1초 대기
+
+    print("게임 종료")
+
+#if __name__ == "__main__":
+#   count_down(5)  # 5초 카운트 다운 시작
+
+def QUIZ () :
+    date1 = ["가장 빠른 닭은?","후다닥",
+         "금은 금인데 도둑고양이에게 가장 어울리는 금은?","야금야금",
+         "고기 먹을 때마다 따라오는 개는? ","이쑤시개"
+         ,"가장 어렵게 지은 절은? ","우여곡절"]  
+    score = 0
+
+    print("문제는 총 4문제가 있고 난이도가 있으므로 다 알려드리겠습니다")
+    for i in range(0,len(date1)-1,2):
+        print(i)
+
+    #if __name__ == "__main__":
+    #count_down(5)
+
+    correct = str(input("정답을 입력하시오"))
+    
+    if correct == date1[1] :
+        print("정답입니다")
+        
+if a == 1 :
+  print("넌센스 퀴즈를 선택하였습니다 게임 시작합니다")
+elif a == 2 :
+  print("속담 퀴즈를 선택하였습니다 게임 시작합니다")
+elif a == 3 :
+  print("신조어 퀴즈를 선택하였습니다 게임 시작합니다")
+else :
+  print("값오류 다시 입력하시오")
