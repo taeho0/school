@@ -1,0 +1,177 @@
+import time
+print("-----------------------------------------------------------------------------------------------")
+print("안녕하세요")
+print("퀴즈 게임 입니다")
+print("-----------------------------------------------------------------------------------------------")
+print()
+print("-----------------------------------------------------------------------------------------------")
+print("넌센스 퀴즈는(1)\n속담 퀴즈는 (2)\n신조어 퀴즈는(3)\n파이썬 사지선다(4)")
+print("-----------------------------------------------------------------------------------------------")
+number = 0
+temp = 0
+count = 0
+score = 0
+a = int(input())
+
+def Python() :
+  problem = "파이썬에서 문자열을 나타내는 데 사용하는 기호는 무엇인가요? "
+  b = ["a. 꺽쇠 괄호 ('[]')", "b. 중괄호 ('{}')", "c. 작은 따옴표 (''')", "d. 큰 따옴표 ('\"\"\"')"]
+  
+  correct = "d"
+  # 퀴즈 출력
+  print(problem)
+  for i in b:
+    print(i)
+
+  # 사용자로부터 답 입력 받기
+  people = str(input("정답을 선택하세요 (a, b, c, d): "))
+
+  # 정답 확인 및 결과 출력
+  if people == correct:
+      global score
+      score += 1
+      print("정답입니다!")
+      print("지금 점수",score,"점 입니다")
+  else:
+      score -= 1
+      print("틀렸습니다. 정답은 '{}' 입니다.".format(correct))
+      print("지금 점수",score,"입니다")
+
+
+
+def count_down(taeho):  # 시간초 새는 카운트 다운 코드
+    for i in range(taeho, 0, -1):
+        print(f"남은 시간: {i} 초 남았습니다")
+        time.sleep(1)  # 1초 대기
+    print("입력 해주세요")
+
+def notokingcount_down(taeho1): # print 없는 카운트 다운
+    for i in range(taeho1, 0, -1):
+        time.sleep(1)  # 1초 대기
+
+
+
+def QUIZ1() :
+  num1 = [" ","1번","2번","3번","4번"]
+  while True :
+    date1 = [" ","가장 빠른 닭은?",
+         "금은 금인데 도둑고양이에게 가장 어울리는 금은?",
+         "고기 먹을 때마다 따라오는 개는? "
+         ,"가장 어렵게 지은 절은? "] 
+    date2 = [" ","후다닥","야금야금","이쑤시개","우여곡절"]
+    
+
+   # print("문제는 총 4문제가 있고 난이도가 있으므로 다 알려드리겠습니다")
+    #print()
+    #for i in range(0,len(date1)-1,2):
+    #    print("------------------------")
+    #    print(date1[i])
+      
+    spacebar_count = 0
+
+# 리스트를 순회하면서 공백 개수 세기
+    temp = len(date1)-1
+      #print("문제는 총 ",temp-index,"개 입니다")
+    global count
+    print("문제는 총",temp-count,"개 입니다")
+    print(num1[1:],"번을 생략하고 눌러 주세요 예) 1번 ㅡ> 1")
+    global number
+    a = number
+    number = int(input())
+    num1.pop(number)
+    
+    if a == number :
+      print("다시 입력하여 주세요 전에 입력한 값입니다")
+      continue
+
+
+    print(date1[number])
+    print(number,"번째 문제의 정답을 입력하시오")   
+    correct = input()
+    #if __name__ == "__main__":
+    #count_down(5)
+    if correct == date2[number] :
+        count += 1
+        global score
+        score += 1
+        print("정답입니다")
+        if __name__ == "__main__" :
+         notokingcount_down(3)
+        print("현재 점수",score,"점입니다")
+    else : 
+       count +=1
+       score -= 1
+       print("틀리셨습니다 1점 감점합니다")
+       print("지금 점수",score,"점입니다")
+    if score < 0 : 
+        print("좀더 분발하세요ㅋㅋ")
+
+def QUIZ2() :
+  num1 = ["1번","2번","3번","4번"]
+  while True :
+    date1 = [" ","가는 말이 고와야",
+         "가는 날이",
+         "가지 많은 나무에 "
+         ,"갈수록"] 
+    date2 = [" ","오는 말이 곱다","장날이다.","바람 잘 날 없다.","태산"]
+    
+
+   # print("문제는 총 4문제가 있고 난이도가 있으므로 다 알려드리겠습니다")
+    #print()
+    #for i in range(0,len(date1)-1,2):
+    #    print("------------------------")
+    #    print(date1[i])
+      
+    spacebar_count = 0
+
+# 리스트를 순회하면서 공백 개수 세기
+    temp = len(date1)-1
+      #print("문제는 총 ",temp-index,"개 입니다")
+    global count
+    print("문제는 총",temp-count,"개 입니다")
+    print(num1,"번을 생략하고 눌러 주세요 예) 1번 ㅡ> 1")
+    global number
+    num1.pop(number-1)
+    a = number
+    number = int(input())
+    if a == number :
+      print("다시 입력하여 주세요 전에 입력한 값입니다")
+      continue
+
+
+    print(date1[number])
+    print(number,"번째 문제의 정답을 입력하시오")   
+    correct = input()
+    #if __name__ == "__main__":
+      #count_down(5)
+    if correct == date2[number] :
+        count += 1
+        global score
+        score += 1
+        print("정답입니다")
+        if __name__ == "__main__" :
+         notokingcount_down(3)
+        print("현재 점수",score,"점입니다")
+    else : 
+       count +=1
+       score -= 1
+       print("틀리셨습니다 1점 감점합니다")
+       print("지금 점수",score,"점입니다")
+    if score < 0 : 
+        print("좀더 분발하세요ㅋㅋ")    
+
+   
+    
+if a == 1 :
+  print("넌센스 퀴즈를 선택하였습니다 게임 시작합니다")
+  QUIZ1()
+elif a == 2 :
+  print("속담 퀴즈를 선택하였습니다 게임 시작합니다")
+  QUIZ2()
+elif a == 3 :
+  print("신조어 퀴즈를 선택하였습니다 게임 시작합니다")
+elif a == 4 : 
+  print("파이썬 사지선다 시작합니다")
+  Python()
+else :
+  print("값오류 다시 입력하시오")
